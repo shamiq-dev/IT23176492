@@ -10,7 +10,7 @@ export type TestCase = {
 
 export const testCases: TestCase[] = [
   // -------------------------
-  // POSITIVE FUNCTIONAL (23)
+  // POSITIVE FUNCTIONAL (23) shamiq
   // -------------------------
   {
     id: "Pos_Fun_0001",
