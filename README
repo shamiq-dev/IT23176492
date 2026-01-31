@@ -1,0 +1,70 @@
+# ITPM Playwright Assignment 1
+
+## Project Overview
+This project is a Playwright-based testing suite designed to validate the functionality of the "Changathi: Thanglish to Tamil" transliteration tool. The tool converts text written in Thanglish (Tamil written in English script) into Tamil script.
+
+## Features
+- **Automated Tests**: Tests are written using Playwright to ensure the transliteration tool works as expected.
+- **Test Cases**: Includes both positive and negative test cases to validate the tool's functionality.
+- **Browser Compatibility**: Configured to run tests on major browsers like Chromium, Firefox, and WebKit.
+- **Human-like Typing Simulation**: Tests simulate human typing with delays to mimic real-world usage.
+- **HTML Reports**: Generates detailed HTML reports for test results.
+
+## Project Structure
+- **tests/**: Contains all test files and test cases.
+  - `testcases.ts`: Defines the test cases for the transliteration tool.
+  - `thanglish-to-tamil.spec.ts`: Contains the Playwright test scripts.
+- **playwright.config.ts**: Configuration file for Playwright.
+- **playwright-report/**: Directory where HTML test reports are generated.
+- **test-results/**: Directory for storing test result artifacts.
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd itpm-playwright-assignment1
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+### Running Tests
+To execute the test suite, run the following command:
+```bash
+npx playwright test
+```
+
+### Viewing Test Reports
+After running the tests, you can view the HTML report:
+```bash
+npx playwright show-report
+```
+
+## Test Cases
+The test cases are defined in `tests/testcases.ts` and include:
+- **Positive Tests**: Ensure the tool correctly transliterates valid Thanglish inputs into Tamil.
+- **Negative Tests**: Ensure the tool does not produce incorrect outputs for invalid inputs.
+- **UI Tests**: Validate the user interface behavior.
+
+## Configuration
+The Playwright configuration file (`playwright.config.ts`) includes:
+- Test directory: `./tests`
+- Parallel test execution
+- HTML reporter for test results
+- Browser-specific project settings
+
+## Dependencies
+- `@playwright/test`: Playwright testing framework
+- `@types/node`: TypeScript definitions for Node.js
+
+## License
+This project is licensed under the ISC License.
+
+## Author
+Name: <SHAMIQ UL HAQ J M>
+Reg No: <IT23176492>
